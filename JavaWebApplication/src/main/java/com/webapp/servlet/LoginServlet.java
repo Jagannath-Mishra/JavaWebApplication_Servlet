@@ -22,5 +22,14 @@ public class LoginServlet extends HttpServlet{
 		request.setAttribute("date", new Date());
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 	}
+	
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+	
+		String name = request.getParameter("name");
+		
+		request.setAttribute("name", name);
+		request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+	}
 
 }
