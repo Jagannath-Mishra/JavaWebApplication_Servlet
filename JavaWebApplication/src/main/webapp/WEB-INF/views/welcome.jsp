@@ -10,6 +10,6 @@
 <h1> Java Web Application Step By Step</h1>
 <h1> Servlet Demo</h1>
 
-<a href="/login?name=Jagannath Mishra"> Login By Jagannath Mishra</a>
+<a href="/login?name=Jagannath Mishra&password=Jan@2018"> Login By Jagannath Mishra</a>
 </body>
 </html>
