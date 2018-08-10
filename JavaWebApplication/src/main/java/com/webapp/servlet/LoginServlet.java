@@ -27,8 +27,10 @@ public class LoginServlet extends HttpServlet{
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 	
 		String name = request.getParameter("name");
+		String password = request.getParameter("password");
 		
 		request.setAttribute("name", name);
+		request.setAttribute("pass", password);
 		request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
 	}
 

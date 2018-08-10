@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1> Java Web Application Step By Step</h1>
-<h1> Servlet Demo <b style="color: blue;">${name}</b></h1>
+<h1> Servlet Demo <b style="color: red;">${name} : ${pass}</b></h1>
 
 <a href="/login?name=Jagannath Mishra&password=Jan@2018"> Login By Jagannath Mishra</a>
 </body>

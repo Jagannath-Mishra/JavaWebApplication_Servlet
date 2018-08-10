@@ -12,7 +12,7 @@
  	<h2>My First Servlet Runnning @ ${date} } </h2> 
 
 	<form action="/login" method="post">
-		Name: <input type="text" name="name" /> 
+		Name: <input type="text" name="name" /> Password: <input type="password" name="password" />
 		<input type="submit" />
 	</form>
 
