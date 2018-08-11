@@ -10,13 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.webapp.service.LoginService;
+import com.webapp.service.TodoService;
 
 @WebServlet (urlPatterns="/login")
 public class LoginServlet extends HttpServlet{
 	
 	
 	private LoginService service = new LoginService();
-	
+	private TodoService todoService = new TodoService();
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
@@ -42,6 +43,7 @@ public class LoginServlet extends HttpServlet{
 			request.setAttribute("name", name);
 			request.setAttribute("pass", password);
 			request.setAttribute("date", new Date());
+			request.setAttribute("todos",todoService.retriveTodos());
 			request.getRequestDispatcher("/WEB-INF/views/dashboard.jsp").forward(request, response);
 		}else {
 			
