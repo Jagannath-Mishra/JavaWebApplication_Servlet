@@ -17,7 +17,7 @@ Your Todos are <br>
 
 <ol>
 <c:forEach items="${todos}" var="todo">
-<li>${todo.name}</li>
+<li>${todo.name} <a href="/delete-todo?todo=${todo.name}">Delete</a></li>
 </c:forEach>
 </ol>
 </div>
