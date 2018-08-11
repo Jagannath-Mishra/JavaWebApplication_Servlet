@@ -8,14 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Login by User: ${name} and Password: ${pass}</h1>
- 	<h2>My First Servlet Runnning @ ${date} } </h2> 
-
+	<h1>User Login Portal </h1>	
+	<p><font color="red">${error}</font></p>
 	<form action="/login" method="post">
 		Name: <input type="text" name="name" /> Password: <input type="password" name="password" />
 		<input type="submit" />
 	</form>
 
- 	<p> Pass extra parameter in url like this http://localhost:8080/<b style="color:red">?name=Jagannath&password=abcd@2018</b> </p>
+ 	<p> This Login screen only accepts <b style="color:red">Username=Jagannath Mishra  and Password=dummy</b> </p>
 </body>
 </html>
